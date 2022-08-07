@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+div.frame{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+
+div.number{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.one-one, .one-two, .zero-one, .zero-two{
+    background-color: #fff;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+}
+.one-one, .one-two{
+    border-radius: 3px;
+}
+div.one-one{
+    height: 40px;
+    width: 20px;
+    align-self: baseline;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: -15px;
+    z-index: 1;
+    
+    
+}
+
+div.one-two{
+    height: 100px;
+    width: 24px;
+    z-index: 3;
+}
+.zero-one, .zero-two{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 24px solid #fff;
+    position: absolute;
+    line-height: 60px;
+}
+
+.zero-one{
+    left: 17px;
+    z-index: 2;
+}
+.zero-two{
+    left: 100px;
+    z-index: 1;
+}
+
+div.text{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.text span{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+}
+span.big{
+    font-size: 82px;
+    height: 70px;
+
+}
+
+span.small{
+    font-size: 23px;
+    height: 20px;
+    letter-spacing: 0.04cm;
+}
